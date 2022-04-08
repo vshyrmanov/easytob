@@ -1,0 +1,11 @@
+.main {
+  border: 1px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  img {
+    width: 40%;
+  }
+}

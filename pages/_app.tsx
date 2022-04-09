@@ -1,19 +1,19 @@
 import LayoutHOC from '../Components/Layout/LayoutHOC';
-import {createStore} from 'redux';
 import '../styles/global.css';
 import 'antd/dist/antd.css';
 import {Provider} from "react-redux";
-import {reducer} from '../models/reducer';
+import store, { persistor } from "../src/store";
+import { PersistGate } from 'redux-persist/integration/react';
 
-const store = createStore(reducer);
 
 export default function App({Component, pageProps}) {
 	return (
 			<Provider store={store}>
-				<LayoutHOC>
-					<Component {...pageProps} />
-				</LayoutHOC>
+				<PersistGate loading={null} persistor={persistor} >
+					<LayoutHOC>
+						<Component {...pageProps} />
+					</LayoutHOC>
+				</PersistGate>
 			</Provider>
-
 	)
 }

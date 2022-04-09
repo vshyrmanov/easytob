@@ -1,6 +1,7 @@
 import {Avatar, List, Spin} from "antd";
 import Link from "next/link";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 const ListItem = ({item}) => {
 	const [loading, setLoading] = useState(false);
@@ -11,7 +12,7 @@ const ListItem = ({item}) => {
 					<List.Item.Meta
 							key={item._id}
 							avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
-							title={<Link href={`/users/${item._id}`}>
+							title={<Link href={`/positions/${item._id}`}>
 								<a onClick={() => setLoading(true)}>{item.name}</a>
 							</Link>}
 							// description={item.description}

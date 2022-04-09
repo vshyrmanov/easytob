@@ -1,19 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Link from 'next/link';
-import { Layout, Menu, Button, Select } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined, MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
+import {Layout, Menu, Button, Badge, Modal, Form, Input, Select } from 'antd';
+import { CrownOutlined, AppstoreOutlined } from '@ant-design/icons';
 // @ts-ignore
 import classes from './LayoutHOC.module.scss';
+import axios from "axios";
 
 
 const LayoutHOC = ({children}) => {
-	const { Header, Content, Footer } = Layout;
+	const { Header, Content } = Layout;
 	const { SubMenu } = Menu;
 	const { Option } = Select;
 
-	const [openKeys, setOpenKeys] = React.useState(['sub1']);
-	const [collapsed, setCollapsed] = React.useState(false);
+	const [openKeys, setOpenKeys] = useState(['sub1']);
+	const [data, setData] = useState(null);
+	const [isModalVisible, setIsModalVisible] = useState(false);
+	const [isModalVisible2, setIsModalVisible2] = useState(false);
+
+
+
 	const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
 	const onOpenChange = keys => {
 		const latestOpenKey = keys.find(key => openKeys.indexOf(key) === -1);
@@ -24,32 +30,50 @@ const LayoutHOC = ({children}) => {
 		}
 	};
 
-	const toggleCollapsed = () => {
-		setCollapsed(!collapsed);
-	}
+	useEffect(() => {
+		axios.get('https://arcane-falls-56249.herokuapp.com/store/getCategories')
+				.then(r => setData(r.data));
+	}, [])
+	const [cartCounter, setCartCounter] = useState(0);
+	const cart = useSelector(state => state.positions.cart);
 
-	const dispatch = useDispatch();
+	useEffect(() => {
+		if (cart.length > 0) {
+			setCartCounter(cart.length);
+		} else {
+			setCartCounter(0);
+		}
+	}, [cart])
 
-	const handleChange = (val) => {
-		// localStorage.setItem('store', val)
-		dispatch({type: "SET_STORE", payload: val});
-	}
+	const onFinish = (values: any) => {
+		console.log('Success:', values);
+		axios.post('https://arcane-falls-56249.herokuapp.com/store/createCategory', values)
+				.then(() => setIsModalVisible(!isModalVisible))
+	};
 
-	const stores = useSelector(state => state.stores)
+	const onFinishFailed = (errorInfo: any) => {
+		console.log('Failed:', errorInfo);
+	};
+
+	const onFinish2 = (values: any) => {
+		console.log('Success:', values);
+		axios.post('https://arcane-falls-56249.herokuapp.com/store/createPosition', values)
+				.then(() => setIsModalVisible2(!isModalVisible2))
+	};
+
+	const onFinishFailed2 = (errorInfo: any) => {
+		console.log('Failed:', errorInfo);
+	};
 
 	return (
 			<Layout className={classes.layout}>
 				<Header className={classes.header}>
-					<div className="logo" />
-					<Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+					<Menu theme="dark" mode="horizontal" defaultSelectedKeys={['3']} className={classes.navbar}>
 						<Menu.Item key={'home'}><Link href="/home">Home</Link></Menu.Item>
-						<Menu.Item key={'users'}><Link href="/users">Users</Link></Menu.Item>
-						<Select defaultValue="Take s store" style={{ width: 120 }} onChange={handleChange}>
-							{stores && stores.map(e => <Option key={e._id} value={e._id}>{e.name}</Option>)}
-							{/*<Option value="jack">Jack</Option>*/}
-							{/*<Option value="lucy">Lucy</Option>*/}
-							{/*<Option value="Yiminghe">yiminghe</Option>*/}
-						</Select>
+							<Menu.Item key={'cart'}>
+								<Badge count={cartCounter} offset={[50, 30]}/>
+								<Link href="/cart">Cart</Link>
+							</Menu.Item>
 					</Menu>
 				</Header>
 				<Content className={classes.content}>
@@ -57,36 +81,112 @@ const LayoutHOC = ({children}) => {
 							mode="inline"
 							openKeys={openKeys}
 							onOpenChange={onOpenChange}
-							className={!collapsed ? classes.menu: classes.menu_pullOf}
-							inlineCollapsed={collapsed}>
-						<Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
-							{React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
-						</Button>
-						<SubMenu key="sub1" icon={<MailOutlined />} title="Navigation One">
-							<Menu.Item key="1">Option 1</Menu.Item>
-							<Menu.Item key="2">Option 2</Menu.Item>
-							<Menu.Item key="3">Option 3</Menu.Item>
-							<Menu.Item key="4">Option 4</Menu.Item>
+							className={classes.menu}>
+						<SubMenu key="sub1" icon={<AppstoreOutlined />} title="Categories">
+							{data && data.map(e =>
+									<Menu.Item key={e._id}>
+									<Link href={`/filter/${e._id}`}>{e.name}</Link>
+									</Menu.Item>)}
 						</SubMenu>
-						<SubMenu key="sub2" icon={<AppstoreOutlined />} title="Navigation Two">
-							<Menu.Item key="5">Option 5</Menu.Item>
-							<Menu.Item key="6">Option 6</Menu.Item>
-							<SubMenu key="sub3" title="Submenu">
-								<Menu.Item key="7">Option 7</Menu.Item>
-								<Menu.Item key="8">Option 8</Menu.Item>
-							</SubMenu>
-						</SubMenu>
-						<SubMenu key="sub4" icon={<SettingOutlined />} title="Navigation Three">
-							<Menu.Item key="9">Option 9</Menu.Item>
-							<Menu.Item key="10">Option 10</Menu.Item>
-							<Menu.Item key="11">Option 11</Menu.Item>
-							<Menu.Item key="12">Option 12</Menu.Item>
+						<SubMenu key="sub2" icon={<CrownOutlined /> } title="Admin">
+							<Menu.Item key={'add_category'} onClick={() => setIsModalVisible(!isModalVisible)}>
+								Add category
+							</Menu.Item>
+							<Menu.Item key={'add_position'} onClick={() => setIsModalVisible2(!isModalVisible2)}>
+								Add position
+							</Menu.Item>
 						</SubMenu>
 					</Menu>
-					<div className={!collapsed ? classes.container : classes.pullOf}>
+					<div className={classes.container}>
 						{children}
 					</div>
+
 				</Content>
+				<Modal
+						title="Basic Modal"
+						visible={isModalVisible}
+						onOk={() => setIsModalVisible(!isModalVisible)}
+						onCancel={() => setIsModalVisible(!isModalVisible)}
+						footer={[
+								null
+						]}
+				>
+					<Form
+							name="basic"
+							labelCol={{ span: 8 }}
+							wrapperCol={{ span: 16 }}
+							initialValues={{ remember: true }}
+							onFinish={onFinish}
+							onFinishFailed={onFinishFailed}
+							autoComplete="off"
+					>
+						<Form.Item
+								label="Category name"
+								name="name"
+						>
+							<Input />
+						</Form.Item>
+						<Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+							<Button type="primary" htmlType="submit">
+								Submit
+							</Button>
+						</Form.Item>
+					</Form>
+				</Modal>
+				<Modal
+						title="Basic Modal"
+						visible={isModalVisible2}
+						onOk={() => setIsModalVisible2(!isModalVisible2)}
+						onCancel={() => setIsModalVisible2(!isModalVisible2)}
+						footer={[
+							null
+						]}
+				>
+					<Form
+							name="basic"
+							labelCol={{ span: 8 }}
+							wrapperCol={{ span: 16 }}
+							initialValues={{ remember: false }}
+							onFinish={onFinish2}
+							onFinishFailed={onFinishFailed2}
+							autoComplete="off"
+					>
+						<Form.Item
+							label="Choose a category"
+							name="owner"
+						>
+							<Select defaultValue="Choose category" style={{ width: 120 }}>
+								{data && data.map(e =>
+										<Option key={e._id} value={e._id}>
+											{e.name}
+										</Option>)}
+							</Select>
+						</Form.Item>
+						<Form.Item
+								label="Position name"
+								name="name"
+						>
+							<Input />
+						</Form.Item>
+						<Form.Item
+								label="Position description"
+								name="desc"
+						>
+							<Input />
+						</Form.Item>
+						<Form.Item
+								label="Price"
+								name="price"
+						>
+							<Input />
+						</Form.Item>
+						<Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+							<Button type="primary" htmlType="submit">
+								Submit
+							</Button>
+						</Form.Item>
+					</Form>
+				</Modal>
 			</Layout>
 	);
 };

@@ -3,6 +3,34 @@
   padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
+  .category_settings {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(3, 3, 3, 0.52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    transition: 250ms ease-in-out;
+    svg {
+      path {
+        fill: #fff;
+        transition: 250ms ease-in-out;
+      }
+    }
+    &:hover {
+      background: #fff;
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
 }

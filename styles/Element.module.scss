@@ -1,0 +1,70 @@
+.main {
+  //border: 1px solid red;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  //height: 100%;
+  width: 100%;
+  height: 100%;
+  //overflow-y: scroll;
+  .head {
+    padding: 15px;
+    height: 100px;
+    //border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    //border: 1px solid red;
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    .content {
+      //border: 1px solid red;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .volumes {
+      //border: 1px solid red;
+      width: 30%;
+      height: 200px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .toCart {
+        font-size: 16px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #bebebe;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+        svg {
+          path {
+            fill: #bebebe;
+            transition: 250ms ease-in-out;
+          }
+        }
+        &:hover {
+          color: #3c8c2b;
+          svg {
+            path {
+              fill: #3c8c2b;
+            }
+          }
+        }
+      }
+    }
+  }
+}

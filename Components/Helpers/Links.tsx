@@ -1,0 +1,1 @@
+export const LINK = "https://arcane-falls-56249.herokuapp.com/store/";

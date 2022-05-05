@@ -1,0 +1,38 @@
+.main {
+  width: 100%;
+  position: relative;
+  input[type="file"] {
+    visibility: hidden;
+    z-index: -1;
+    position: absolute;
+  }
+  .uploadImg {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    width: 120px;
+    height: 60px;
+    //border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      width: 40px;
+      height: 40px;
+      path {
+        fill: rgba(0, 0, 0, 0.52);
+      }
+    }
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+
+

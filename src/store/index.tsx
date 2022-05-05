@@ -10,12 +10,16 @@ import {
 	REGISTER,
 } from 'redux-persist';
 import {positionsReducer} from './positionsReducer';
+import {rerenderReducer} from './rerenderReducer';
+import {categoryReducer} from './categoryReducer';
 import storage from 'redux-persist/lib/storage';
 import thunkMiddleware from 'redux-thunk'
 
 
 const rootReducer = combineReducers({
-		positions: positionsReducer
+		positions: positionsReducer,
+		rerender: rerenderReducer,
+		categories: categoryReducer
 })
 
 const persistConfig = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateForm from "../../../Components/UI/Form/CreateForm";
+import CreateForm from "../../../src/Components/UI/Form/CreateForm";
 import classes from '../../../styles/EditPage.module.scss';
 
 const SubcategoryEdit = ({ subcategory }) => {

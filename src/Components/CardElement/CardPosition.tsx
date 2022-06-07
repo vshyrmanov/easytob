@@ -5,13 +5,13 @@ import React, { useEffect, useState } from "react";
 import classes from './CardElement.module.scss';
 import cn from 'classnames';
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../../src/store/positionsReducer";
+import { addToCart } from "../../store/positionsReducer";
 
-import {IRootReducer} from "../../src/types/storeTypes";
+import {IRootReducer} from "../../types/storeTypes";
 import {ShoppingCartOutlined} from "@ant-design/icons";
 import {useRouter} from "next/router";
 import {getOneRequest} from "../workers/sendRequest";
-import {addToBreadcrumb} from "../../src/store/categoryReducer";
+import {addToBreadcrumb} from "../../store/categoryReducer";
 
 const CardPosition = ({ item, isSkeleton }) => {
 	const { Text, Link } = Typography;

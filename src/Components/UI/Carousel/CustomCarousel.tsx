@@ -4,7 +4,7 @@ import {Button} from "antd";
 // @ts-ignore
 import classes from './CustomCarousel.module.scss';
 import {useSelector} from "react-redux";
-import {IRootReducer} from "../../../src/types/storeTypes";
+import {IRootReducer} from "../../../types/storeTypes";
 
 const CustomCarousel = ({ children }) => {
 	const [move, setMove] = useState({ step: 0, counter: 0 });

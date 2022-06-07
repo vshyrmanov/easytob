@@ -3,7 +3,7 @@ import {AutoComplete, Avatar, List} from "antd";
 import {getAllRequest} from "../workers/sendRequest";
 import Link from "next/link";
 import {useSelector} from "react-redux";
-import {IRootReducer} from "../../src/types/storeTypes";
+import {IRootReducer} from "../../types/storeTypes";
 
 import classes from './CustomAutocomplete.module.scss';
 

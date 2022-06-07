@@ -1,8 +1,8 @@
 import React from 'react';
-import {changeCurrentLanguage} from "../../src/store/categoryReducer";
+import {changeCurrentLanguage} from "../../store/categoryReducer";
 import {Select} from "antd";
 import {useDispatch, useSelector} from "react-redux";
-import {IRootReducer} from "../../src/types/storeTypes";
+import {IRootReducer} from "../../types/storeTypes";
 
 import classes from './CustomSelect.module.scss';
 

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Layout, Badge, } from 'antd';
-import {IRootReducer} from "../../src/types/storeTypes";
+import {IRootReducer} from "../../types/storeTypes";
 import { ShoppingCartOutlined, UserOutlined, HomeOutlined, SettingOutlined, } from "@ant-design/icons";
 import CustomModal from "../UI/Modal/Modal";
 import CustomAutocomplete from "../Autocomplete/CustomAutocomplete";

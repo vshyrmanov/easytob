@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import {Button, Input, message, Space} from "antd";
 import {EyeInvisibleOutlined, EyeTwoTone, UserOutlined} from "@ant-design/icons";
 import {auth} from "../../workers/sendRequest";
-import {changeRole, changeToken, changeUserId} from "../../../src/store/categoryReducer";
+import {changeRole, changeToken, changeUserId} from "../../../store/categoryReducer";
 import {useDispatch, useSelector} from "react-redux";
-import {IRootReducer} from "../../../src/types/storeTypes";
+import {IRootReducer} from "../../../types/storeTypes";
 
 const AuthForm = ({ modal, setModal }) => {
 	const dispatch = useDispatch();

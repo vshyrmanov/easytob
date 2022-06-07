@@ -1,8 +1,8 @@
 import {Modal} from "antd";
 import {ExclamationCircleOutlined} from "@ant-design/icons";
 import React from "react";
-import {changeRole, changeToken, changeUserId} from "../../src/store/categoryReducer";
-import {handleHideButton} from "../../src/store/positionsReducer";
+import {changeRole, changeToken, changeUserId} from "../../store/categoryReducer";
+import {handleHideButton} from "../../store/positionsReducer";
 
 const { confirm } = Modal;
 

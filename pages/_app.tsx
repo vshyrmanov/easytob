@@ -1,4 +1,4 @@
-import LayoutHOC from '../Components/Layout/LayoutHOC';
+import LayoutHOC from '../src/Components/Layout/LayoutHOC';
 import '../styles/global.css';
 import 'antd/dist/antd.css';
 import {Provider} from "react-redux";

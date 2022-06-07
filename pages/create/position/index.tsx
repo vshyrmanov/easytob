@@ -1,6 +1,6 @@
 import React from 'react';
-import {LINK} from "../../../Components/Helpers/Links";
-import CreateForm from "../../../Components/UI/Form/CreateForm";
+import {LINK} from "../../../src/Components/Helpers/Links";
+import CreateForm from "../../../src/Components/UI/Form/CreateForm";
 import classes from '../../../styles/Create.module.scss';
 
 

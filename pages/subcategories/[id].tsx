@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {Carousel, Divider, List} from "antd";
-import {getByOwnerRequest, getOneRequest, removeRequest} from "../../Components/workers/sendRequest";
+import {getByOwnerRequest, getOneRequest, removeRequest} from "../../src/Components/workers/sendRequest";
 import { rerenderSubcategory } from "../../src/store/rerenderReducer";
 import {useDispatch, useSelector} from "react-redux";
 import {IRootReducer} from "../../src/types/storeTypes";
-import CardElementSub from "../../Components/CardElement/CardSubcategory";
+import CardElementSub from "../../src/Components/CardElement/CardSubcategory";
 // @ts-ignore
 import classes from '../../styles/Subcategories.module.scss';
 import {useRouter} from "next/router";

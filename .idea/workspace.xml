@@ -3,6 +3,91 @@
   <component name="ChangeListManager">
     <list default="true" id="e1e39cc1-659a-4c13-9437-e19f55ca717a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/17.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/18.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/client-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.next/cache/webpack/server-development/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/middleware-build-manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/middleware-build-manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/chunks/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/_buildManifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/_buildManifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/trace" beforeDir="false" afterPath="$PROJECT_DIR$/.next/trace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Autocomplete/CustomAutocomplete.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Autocomplete/CustomAutocomplete.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Autocomplete/CustomAutocomplete.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Autocomplete/CustomAutocomplete.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/CardElement/Card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CardElement/Card.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/CardElement/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CardElement/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/CardElement/CardElement.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CardElement/CardElement.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/CardElement/CardPosition.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CardElement/CardPosition.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/CardElement/CardSubcategory.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CardElement/CardSubcategory.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/CardElement/CardSubcategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CardElement/CardSubcategory.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Drawer/DrawerCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Drawer/DrawerCustom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/FormTranslate/FormTranslate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FormTranslate/FormTranslate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Helpers/Links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Helpers/Links.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Layout/CustomLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/CustomLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Layout/LayoutHOC.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/LayoutHOC.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Layout/LayoutHOC.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/LayoutHOC.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Layout/formItems.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/formItems.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Layout/helper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Layout/helper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/List/List.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/List/List.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/List/List.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/List/List.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/ListItem/ListItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListItem/ListItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/ListItem/ListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ListItem/ListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Select/CustomSelect.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Select/CustomSelect.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/Select/CustomSelect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Select/CustomSelect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Carousel/CustomCarousel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Carousel/CustomCarousel.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Carousel/CustomCarousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Carousel/CustomCarousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Dropdown/Dropdown.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Dropdown/Dropdown.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Dropdown/Dropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Dropdown/Dropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Dropdown/DropdownLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Dropdown/DropdownLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Dropdown/DropdownMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Dropdown/DropdownMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Form/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Form/AuthForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Form/CreateForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Form/CreateForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Form/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Form/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Form/From.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Form/From.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/InputCustom/InputCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/InputCustom/InputCustom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Menu/Menu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Menu/Menu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Menu/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Menu/Menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Modal/Modal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Modal/Modal.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/SelectCustom/SelectCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/SelectCustom/SelectCustom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Skeleton/SkeletonCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Skeleton/SkeletonCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/Skeleton/SkeletonCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Skeleton/SkeletonCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/SwitchVisibility/SwitchVisibility.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/SwitchVisibility/SwitchVisibility.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/TextareaCustom/TextareaCustom.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/TextareaCustom/TextareaCustom.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/UI/UploadImg/UploadImg.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/UploadImg/UploadImg.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/workers/fetcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/workers/fetcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/workers/imageToBase64.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/workers/imageToBase64.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/workers/imageUrlToFile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/workers/imageUrlToFile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/workers/sendRequest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/workers/sendRequest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/main/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/admin/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/admin/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/create/category/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/create/category/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/create/position/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/create/position/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/create/subcategory/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/create/subcategory/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit/category/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit/category/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit/position/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit/position/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit/subcategory/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit/subcategory/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/positions/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/positions/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/subcategories/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/subcategories/[id].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +131,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/Components" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/pages/edit/position" />
       <recent name="$PROJECT_DIR$/pages" />
     </key>
@@ -70,7 +155,7 @@
       <workItem from="1651652935780" duration="57651000" />
       <workItem from="1652690110243" duration="722000" />
       <workItem from="1653674555692" duration="37327000" />
-      <workItem from="1654624854226" duration="7102000" />
+      <workItem from="1654624854226" duration="8161000" />
     </task>
     <servers />
   </component>

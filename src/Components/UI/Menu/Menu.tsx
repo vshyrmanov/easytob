@@ -5,9 +5,9 @@ import Link from "next/link";
 // @ts-ignore
 import classes from './Menu.module.scss';
 import {useDispatch} from "react-redux";
-import {changeCurrentCategoryId} from "../../../src/store/categoryReducer";
-import EditCategoryDrawer from "../Drawer/EditCategoryDrawer";
-import {sendGetOneRequest} from "../workers/sendRequestCategories";
+import {changeCurrentCategoryId} from "../../../store/categoryReducer";
+// import EditCategoryDrawer from "../Drawer/EditCategoryDrawer";
+// import { sendGetOneRequest } from "../../workers/sendRequest";
 
 const CustomMenu = ({ items, handleModalVisible }) => {
 	const { SubMenu } = Menu;

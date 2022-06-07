@@ -4,7 +4,7 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {useSelector} from "react-redux";
-import {IRootReducer} from "../../src/types/storeTypes";
+import {IRootReducer} from "../../types/storeTypes";
 
 // @ts-ignore
 import classes from './ListItem.module.scss';

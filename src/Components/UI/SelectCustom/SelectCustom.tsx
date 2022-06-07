@@ -4,7 +4,7 @@ import useSWR from "swr";
 import {LINK} from "../../Helpers/Links";
 import {fetcher} from "../../workers/fetcher";
 import {useSelector} from "react-redux";
-import {IRootReducer} from "../../../src/types/storeTypes";
+import {IRootReducer} from "../../../types/storeTypes";
 
 const SelectCustom = ({ type, setOwner, form }) => {
 	const { Option, OptGroup } = Select;

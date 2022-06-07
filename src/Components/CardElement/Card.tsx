@@ -2,11 +2,11 @@ import React, {FC} from 'react';
 import List from "../List/List";
 import ListItem from "../ListItem/ListItem";
 import {useDispatch, useSelector} from "react-redux";
-import {IRootReducer} from "../../src/types/storeTypes";
+import {IRootReducer} from "../../types/storeTypes";
 // @ts-ignore
 import classes from './Card.module.scss';
 import {useRouter} from "next/router";
-import {currentTitle} from "../../src/store/categoryReducer";
+import {currentTitle} from "../../store/categoryReducer";
 
 interface Item {
 	_id: string,

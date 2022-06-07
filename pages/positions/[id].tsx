@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 // @ts-ignore
 import classes from '../../styles/Positions.module.scss';
 import { rerenderPosition } from "../../src/store/rerenderReducer";
-import CardPosition from "../../Components/CardElement/CardPosition";
+import CardPosition from "../../src/Components/CardElement/CardPosition";
 import {useDispatch, useSelector} from "react-redux";
-import { getByOwnerRequest } from "../../Components/workers/sendRequest";
+import { getByOwnerRequest } from "../../src/Components/workers/sendRequest";
 import { Typography } from 'antd';
 import {IRootReducer} from "../../src/types/storeTypes";
 

@@ -5,12 +5,12 @@ import Link from 'next/link';
 // @ts-ignore
 import classes from './CardSubcategory.module.scss';
 import {useDispatch, useSelector} from "react-redux";
-import { addToCart } from "../../src/store/positionsReducer";
-import {rerenderCategory, rerenderPosition, rerenderSubcategory} from "../../src/store/rerenderReducer";
+import { addToCart } from "../../store/positionsReducer";
+import {rerenderCategory, rerenderPosition, rerenderSubcategory} from "../../store/rerenderReducer";
 import CustomDropdown from "../UI/Dropdown/Dropdown";
 import {removeRequest} from "../workers/sendRequest";
-import {addToBreadcrumb, changeCurrentSubcategoryId, currentTitle } from "../../src/store/categoryReducer";
-import {IRootReducer} from "../../src/types/storeTypes";
+import {addToBreadcrumb, changeCurrentSubcategoryId, currentTitle } from "../../store/categoryReducer";
+import {IRootReducer} from "../../types/storeTypes";
 import DrawerCustom from "../Drawer/DrawerCustom";
 import {useRouter} from "next/router";
 

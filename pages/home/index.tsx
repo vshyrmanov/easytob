@@ -1,4 +1,4 @@
-import CardPosition from '../../Components/CardElement/CardPosition';
+import CardPosition from '../../src/Components/CardElement/CardPosition';
 // @ts-ignore
 import classes from '../../styles/Home.module.scss';
 import React, {useEffect, useState} from "react";
@@ -6,7 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {rerenderCategory, rerenderPosition} from "../../src/store/rerenderReducer";
 import {IRootReducer} from "../../src/types/storeTypes";
 import {Avatar, Col, Divider, Menu, Row, Skeleton, Space, List} from "antd";
-import {getAllRequest} from "../../Components/workers/sendRequest";
+import {getAllRequest} from "../../src/Components/workers/sendRequest";
 import {changeCurrentSubcategoryId} from "../../src/store/categoryReducer";
 import Link from "next/link";
 

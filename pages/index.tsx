@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import CustomCarousel from '../Components/UI/Carousel/CustomCarousel';
-import SkeletonCard from '../Components/UI/Skeleton/SkeletonCard';
+import CustomCarousel from '../src/Components/UI/Carousel/CustomCarousel';
+import SkeletonCard from '../src/Components/UI/Skeleton/SkeletonCard';
 // @ts-ignore
 import classes from '../styles/Main.module.scss';
-import {getAllRequest} from "../Components/workers/sendRequest";
+import {getAllRequest} from "../src/Components/workers/sendRequest";
 import {rerenderPosition} from "../src/store/rerenderReducer";
 import {useDispatch, useSelector} from "react-redux";
-import List from "../Components/List/List";
-import Card from '../Components/CardElement/Card';
+import List from "../src/Components/List/List";
+import Card from '../src/Components/CardElement/Card';
 import {IRootReducer} from "../src/types/storeTypes";
 
 const Main = () => {

@@ -3,14 +3,14 @@ import {Avatar, Button, Divider, List, message, Popconfirm, Skeleton, Space, Spi
 
 // @ts-ignore
 import classes from '../../styles/Admin.module.scss';
-import {getAllRequest, removeRequest} from "../../Components/workers/sendRequest";
+import {getAllRequest, removeRequest} from "../../src/Components/workers/sendRequest";
 import {useSelector} from "react-redux";
 import {IRootReducer} from "../../src/types/storeTypes";
 import {UserOutlined} from "@ant-design/icons";
 import {useRouter} from "next/router";
 import useSWR from "swr";
-import {LINK} from "../../Components/Helpers/Links";
-import {fetcher} from "../../Components/workers/fetcher";
+import {LINK} from "../../src/Components/Helpers/Links";
+import {fetcher} from "../../src/Components/workers/fetcher";
 
 const AdminPage = () => {
 	const { TabPane } = Tabs;

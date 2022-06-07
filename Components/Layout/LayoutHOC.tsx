@@ -27,7 +27,6 @@ const LayoutHOC = ({ children }) => {
 	const { showConfirm } = logOut(dispatch);
 	const { handleModal } = modalHelper(userId, isModalVisible, setIsModalVisible);
 	scrollHelper(dispatch, setHideNav);
-
 	useEffect(() => {
 		headerColorized(query, setTransparentHeader);
 	}, [query])

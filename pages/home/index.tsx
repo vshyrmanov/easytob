@@ -5,7 +5,6 @@ import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {rerenderCategory, rerenderPosition} from "../../src/store/rerenderReducer";
 import {IRootReducer} from "../../src/types/storeTypes";
-import HomeCarousel from "../../Components/UI/Carousel/HomeCarousel";
 import {Avatar, Col, Divider, Menu, Row, Skeleton, Space, List} from "antd";
 import {getAllRequest} from "../../Components/workers/sendRequest";
 import {changeCurrentSubcategoryId} from "../../src/store/categoryReducer";
@@ -17,7 +16,7 @@ const HomePage = () => {
 	const dispatch = useDispatch();
 	const rerender = useSelector<IRootReducer>(state => state.rerender.positions)
 	const currentLanguage: any = useSelector<IRootReducer>(state => state.categories.currentLanguage);
-	const [categoriesSelect, setCategoriesSelect] = useState()
+	const [categoriesSelect, setCategoriesSelect] = useState<any>()
 	const [isSkeleton, setIsSkeleton] = useState(false)
 
 
@@ -57,7 +56,7 @@ const HomePage = () => {
 								</Menu>
 				</div>
 				<div className={classes.content}>
-					<div className={classes.carousel}><HomeCarousel /></div>
+					{/*<div className={classes.carousel}><HomeCarousel /></div>*/}
 					<div className={classes.cardList}>
 						<Divider orientation="left">Last positions</Divider>
 						{!isSkeleton && <div className={classes.cards}>

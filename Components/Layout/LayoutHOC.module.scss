@@ -4,35 +4,22 @@
   position: relative;
   .header {
     //border: 1px solid red;
-    position: relative;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.11);
+    //top: 100%;
+    //position: relative;
+    //border-radius: 0 0 20px 20px;
+    transition: 450ms ease-in-out;
     .navbar {
       //border: 1px solid red;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      .search {
-        width: 50%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .custom_select {
-        //border: 1px solid red;
-        background: transparent;
-        color: #fff;
-        padding: 2px;
-        border-radius: 8px;
-        svg {
-          path {
-            fill: #fff;
-          }
-        }
-        &:hover {
-          background: rgba(255, 255, 255, 0.56);
-        }
-      }
+
+
       .nav_item {
         height: 40px;
         width: 40px;
@@ -53,10 +40,14 @@
           }
         }
         &:hover {
-          background: #504f4f;
+          background: rgba(80, 79, 79, 0.51);
         }
       }
     }
+  }
+  .colorized {
+    background: rgba(62, 91, 178, 0.66);
+
   }
   .content {
     display: flex;

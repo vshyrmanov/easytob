@@ -1,25 +1,34 @@
+import React, {FC} from 'react';
 import {Avatar, List, Spin} from "antd";
 import Link from "next/link";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {useSelector} from "react-redux";
+import {IRootReducer} from "../../src/types/storeTypes";
 
-const ListItem = ({item}) => {
-	const [loading, setLoading] = useState(false);
+// @ts-ignore
+import classes from './ListItem.module.scss';
+import {useRouter} from "next/router";
+
+interface ItemProps {
+	_id: string,
+	name: string,
+	image: string,
+	price?: number,
+}
+
+const ListItem:FC<ItemProps> = ({_id, name, image, price}) => {
+	const router = useRouter();
+
+	const toPosition = () => {
+		router.push(`/element/${_id}`)
+	}
 
 	return (
-			<>
-				<List.Item>
-					<List.Item.Meta
-							key={item._id}
-							avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
-							title={<Link href={`/positions/${item._id}`}>
-								<a onClick={() => setLoading(true)}>{item.name}</a>
-							</Link>}
-							// description={item.description}
-					/>
-					{loading && <Spin />}
-				</List.Item>
-			</>
+			<div className={classes.main} onClick={toPosition}>
+				<img alt={name} src={image} />
+				<p>{name}</p>
+			</div>
 	);
 };
 

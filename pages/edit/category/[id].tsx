@@ -1,6 +1,6 @@
 import React from 'react';
 import CreateForm from "../../../Components/UI/Form/CreateForm";
-
+// @ts-ignore
 import classes from '../../../styles/EditPage.module.scss';
 
 const CategoryEdit = ({ category }) => {

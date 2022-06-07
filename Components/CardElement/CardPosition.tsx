@@ -42,8 +42,8 @@ const CardPosition = ({ item, isSkeleton }) => {
 
 	const [isShowBtn, setIsShowBtn] = useState(false)
 
-	const [subcategory, setSubcategory] = useState()
-	const [category, setCategory] = useState()
+	const [subcategory, setSubcategory] = useState<any>()
+	const [category, setCategory] = useState<any>()
 
 	useEffect(() => {
 		getOneRequest('Subcategory', item.owner)
@@ -57,27 +57,20 @@ const CardPosition = ({ item, isSkeleton }) => {
 		}
 	}, [subcategory])
 
-	console.log("cat", category)
-	console.log("subcat", subcategory)
+	const addToRoute = () => {
+		router.push(`/element/${item._id}`)
+	}
 
 	return (
 			<>
-				{!isSkeleton && <Card.Grid className={classes.card} onMouseOver={() => setIsShowBtn(true)} onMouseOut={() => setIsShowBtn(false)}>
+				{!isSkeleton && <div className={classes.card} onMouseOver={() => setIsShowBtn(true)} onMouseOut={() => setIsShowBtn(false)}>
 					<img
 							className={classes.avatar}
 							src={item.image ? item.image : "https://www.gscaltexindia.com/wp-content/uploads/2020/12/kixx-ultra-synthetic.jpg"}
 					/>
 					<div className={classes.desc} >
 						<div className={classes.name}>
-								<Text strong className={classes.text} onClick={() => {
-									router.push(`/element/${item._id}`)
-									if (category && !query.asPath.includes('positions')) {
-										dispatch(addToBreadcrumb({title: category.name[currentLanguage].name, path: `/subcategories/${category._id}`}))
-									}
-									if (subcategory) {
-										dispatch(addToBreadcrumb({title: subcategory.name[currentLanguage].name, path: `/positions/${subcategory._id}`}))
-									}
-								}}>
+								<Text strong className={classes.text} onClick={addToRoute}>
 									{item.name[currentLanguage].name}
 								</Text>
 						</div>
@@ -94,7 +87,7 @@ const CardPosition = ({ item, isSkeleton }) => {
 								</Text>
 						}
 					</div>
-				</Card.Grid>}
+				</div>}
 				{isSkeleton &&
 				<Card.Grid className={classes.card}>
             <Skeleton.Avatar active={true} size={100} shape={'square'} />

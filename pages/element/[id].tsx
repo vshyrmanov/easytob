@@ -1,23 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import {Typography, Image, Divider, Button, Breadcrumb} from 'antd';
-
-
 // @ts-ignore
 import classes from '../../styles/Element.module.scss';
-import {useDispatch, useSelector} from "react-redux";
-import {IRootReducer} from "../../src/types/storeTypes";
-import {ShoppingCartOutlined} from "@ant-design/icons";
-import {addToCart} from "../../src/store/positionsReducer";
-import {useRouter} from "next/router";
-import {getOneRequest} from "../../Components/workers/sendRequest";
-import {addToBreadcrumb, removeFromBreadcrumb} from "../../src/store/categoryReducer";
+import { useDispatch, useSelector } from "react-redux";
+import { IRootReducer } from "../../src/types/storeTypes";
+import { ShoppingCartOutlined } from "@ant-design/icons";
+import { addToCart } from "../../src/store/positionsReducer";
+import { useRouter } from "next/router";
 
 const Element = ({ element }) => {
 	const { Title, Text } = Typography;
 	const dispatch = useDispatch();
 	const router = useRouter();
 	const currentLanguage: any = useSelector<IRootReducer>(state => state.categories.currentLanguage);
-	const breadCrumb: any = useSelector<IRootReducer>(state => state.categories.breadCrumb);
 	const cart: any = useSelector<IRootReducer>(state => state.positions.cart);
 	const [isQuantity, setIsQuantity] = useState(false);
 
@@ -32,30 +27,9 @@ const Element = ({ element }) => {
 		dispatch(addToCart(element))
 	}
 
-
-
-	console.log(breadCrumb)
-
-	const removeBC = (index, path) => {
-		router.push(path)
-		if (index > 0) {
-			dispatch(removeFromBreadcrumb(breadCrumb.slice(0, index)))
-		} else {
-			dispatch(removeFromBreadcrumb(breadCrumb.slice(0, 1)))
-		}
-	}
-
-
-
 	return (
 			<div className={classes.main}>
 				<div className={classes.head}>
-					<Breadcrumb>
-						{breadCrumb && breadCrumb.map((e, i) =>
-								<Breadcrumb.Item key={e.path} onClick={() => removeBC(i, e.path)} style={{ cursor: 'pointer' }}>
-									<span>{e.title}</span>
-								</Breadcrumb.Item>)}
-					</Breadcrumb>
 					<Title>{element.name[currentLanguage].name}</Title>
 				</div>
 				<div className={classes.wrapper}>

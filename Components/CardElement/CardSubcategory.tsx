@@ -20,8 +20,6 @@ const CardElementSub = ({ item, categoryName }) => {
 	const dispatch = useDispatch();
 	const currentLanguage: any = useSelector<IRootReducer>(state => state.categories.currentLanguage);
 
-	console.log(query)
-
 	return (
 			<>
 				<Card.Grid className={classes.card}>

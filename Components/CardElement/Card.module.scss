@@ -1,0 +1,14 @@
+.main {
+  width: 370px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background: #fff;
+  margin: 10px;
+  h1 {
+    cursor : pointer;
+  }
+}

@@ -21,4 +21,6 @@ export interface ICart {
 export interface IPositionState {
 	positions: IPosition[],
 	cart: ICart[],
+	forward: string,
+	hideButtons: boolean,
 }
